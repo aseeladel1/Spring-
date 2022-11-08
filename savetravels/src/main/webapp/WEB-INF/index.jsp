@@ -19,6 +19,7 @@
 				<th>Expense</th>
 				<th>Vendor</th>
 				<th>Amount</th>
+				<th>Actions</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -27,6 +28,7 @@
 					<td><c:out value="${expense.name}"></c:out></td>
 					<td><c:out value="${expense.vendor}"></c:out></td>
 					<td>$<c:out value="${expense.amount}"></c:out></td>
+					<td><a href="/edit/${expense.id}">edit</a></td>
 				</tr>
 			</c:forEach>
 		</tbody>
@@ -67,9 +69,6 @@
 			<div>
 				<input type="submit" value="Submit" />
 			</div>
-
-
-
 		</form:form>
 	</div>
 </body>

@@ -11,8 +11,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Edit Book</h1>
-	<form:form action="/expenses/${expense.id}" method="post"
+	<h1>Edit Expense</h1><a href="/expenses">Go back</a>
+	<form:form action="/edit/${expense.id}" method="post"
 		modelAttribute="expense">
 		<input type="hidden" name="_method" value="put">
 		<div>
