@@ -21,7 +21,7 @@ public class SinglyLinkedList {
 			while (runner.next != null) {
 				runner = runner.next;
 			}
-			runner.next = newNode;
+			runner.next= newNode;
 
 		}
 	}
@@ -32,7 +32,6 @@ public class SinglyLinkedList {
 			return null;
 		}
 		this.head = this.head.next;
-
 		return this.head;
 	}
 
